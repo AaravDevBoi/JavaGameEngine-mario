@@ -41,7 +41,6 @@ public class AssetPool {
         if (!AssetPool.spritesheets.containsKey(file.getAbsolutePath())) {
             AssetPool.spritesheets.put(file.getAbsolutePath(), spritesheet);
         }
-        System.out.println(AssetPool.getSpritesheet(file.getAbsolutePath()));
     }
 
     public static Spritesheet getSpritesheet(String resourceName) {
