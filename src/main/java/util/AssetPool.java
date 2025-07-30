@@ -13,7 +13,6 @@ public class AssetPool {
 
     public static Shader getShader(String resourceName) {
         File file = new File(resourceName);
-
         if (AssetPool.shaders.containsKey(file.getAbsolutePath())) {
             return AssetPool.shaders.get(file.getAbsolutePath());
         } else {
@@ -26,7 +25,6 @@ public class AssetPool {
 
     public static Texture getTexture(String resourceName) {
         File file = new File(resourceName);
-
         if (AssetPool.textures.containsKey(file.getAbsolutePath())) {
             return AssetPool.textures.get(file.getAbsolutePath());
         } else {
